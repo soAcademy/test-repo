@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <!--
+        <input>     สร้างช่องรับข้อความต่างๆ
+        <select>    แสดงตัวเลือกแบบ drop down
+        <option>    สร้างตัวเลือก
+        <button>    สร้างปุ่ม
+        <label>     กำหนดป้ายชื่อให้ช่องรับข้อมูล
+        <textarea>  สร้างช่องรับข้อความแบบหลายบรรทัด
+
+    -->
+        <style>
+            form{
+                border: 2px solid red;
+            }
+            input{
+                border: 2px solid blue;
+            }
+        </style>
+  
+</head>
+<body >
+    <h1>ธนพล บุญโชติ</h1>
+    <form >
+        <div>
+            <label for="first name">ชื่อจริง</label>
+            <input type="text" name ="fname" placeholder="ป้อนชื่อจริงของคุณ(ก-ฮ)" required>      <!--required ทำให้ต้องกรอกข้อมูล ไม่สามารถข้ามได้-->               
+        </div>
+        <div>
+            <label for="last name" name="lname">นามสกุล</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="email" name ="email">อีเมล</label>
+            <input type="email" >
+        </div>
+        <div>
+            <label for="pass" name="password">รหัสผ่าน</label>
+            <input type="password" name="password">
+        </div>
+        <div> 
+            <label for="">ที่อยู่</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="อายุ" name ="age" >อายุ</label>
+            <input type="number" name="age" min="0" max="100"value="2" readonly>            <!--readonly อ่านได้อย่างเดียว-->
+        </div>
+        <div>
+            <label for="email" name ="email">วันเกิด</label>
+            <input type="date"name="birthdate" >                                            <!--type = date เป็นการใส่ปฏิทิน-->
+        </div>
+        <div>
+            <label for="email" name ="email">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel">
+        </div>
+        <div>
+            <label for="email" name ="email">สีที่ชอบ</label>
+            <input type="color"name="color" >                                               <!--type =color -->
+        </div>
+        <div>
+            <label for="email" name ="email">ช่วงตัวเลข</label>
+            <input type="range" name="rangnumber" value="1" >
+        </div>
+        <div>
+            <label for="email" name ="email">ระดับการศึกษา</label>
+            <select name="edu" id="">                                                   <!--select option ใช้สร้าง drop down-->
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>                          
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท"selected>ปริญญาโท</option>                    <!--selceted ตั้งค่าเป็นค่าเริ่มต้น-->
+            </select>
+        </div>
+        <div>
+            <label for="">เพศ</label>
+            <input type="radio" name="gender">เพศชาย                           <!--ต้องตั้งชื่อ name ให้เหมือนกัน จะได้อยู่กลุ่มเดียวกัน จะเลือก choic ได่แค่ 1-->
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <div>
+            <label for="">สิ่งที่ชอบ</label>                                    <!--checkbox จะเลือกได้ทุกตัว ไม่เหมือน radio-->
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">สร้างเกมส์
+            <input type="checkbox" name="fav">ซ่อมคอม
+            <input type="checkbox" name="fav">เล่นเกม
+            <input type="checkbox" name="fav">อื่น
+        </div>
+        <div>
+            <label for="">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+        <div>
+            <label for="">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit"value="บันทึกข้อมูล">
+            <input type="reset" value="ล้างข้อมูล">
+        </div>
+    </form>
+
+
+</body>
+</html>
