@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("./img/marble-bg-purple.jpeg");
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+
+}
+
+.story1{
+   margin: 20px 20px 20px 20px ;
+   border: 3px dashed rgb(234, 208, 39);
+   background-image: url(./img/istockphoto-517188688-612x612.jpeg);
+   
+}
+.story1 :nth-child(1){
+    color: aliceblue;
+}
+
+.story2{
+    margin: 20px 20px 20px 20px ;
+    border: 3px dashed rgb(234, 208, 39);
+    background: rgba(245, 49, 14, 0.886)
+}
+
+.story2 :nth-child(1){
+    color: aliceblue;
+}
+
+.story3{
+    margin: 20px 20px 20px 20px ;
+    border: 3px dashed rgb(234, 208, 39);
+    position: relative;
+    /* background-image: url(./img/istockphoto-517188688-612x612.jpeg); */
+    
+}
+
+.text{
+    font-size: 18px;
+    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-left: 10px;
+    z-index: 7;
+
+}
+
+.story3 img{
+    width: 50%;
+    height: fit-content;
+    opacity: .7;
+    z-index: -4;
+    position: absolute;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+</head>
+<body>
+    <span><h1>นภัสพิมญชุ์  พลพัฒนไพศาล</h1></span>
+    <div class="container">
+        <div>
+            <label for="user-firstname">ชื่อจริง</label>
+            <input type="text" id="userfirstname" name="user-firstname" placeholder="ป้อนชื่อของคุณ (ก-ฮ)">
+        </div>
+        <div>
+            <label for="user-name">นามสกุล</label>
+            <input type="text" id="userlastname" name="user-lastname">
+        </div>
+        <div>
+            <label for="user-email">อีเมล</label>
+            <input type="email" id="useremail" name="user-email">
+        </div>
+        <div>
+            <label for="user-password">รหัสผ่าน</label>
+            <input type="password" id="userpassword" name="user-password">
+        </div>
+        <div>
+            <label for="user-address">ที่อยู่</label>
+            <textarea style="resize: none;" name="user-address" id="useraddress" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <label for="user-age">อายุ</label>
+            <input type="number" id="userage" name="user-age">
+        </div>
+        <div>
+            <label for="user-birth">วันเกิด</label>
+            <input type="date" id="userbirth" name="user-birth">
+        </div>
+        <div>
+            <label for="user-phonenum">เบอร์โทรศัพท์</label>
+            <input type="tel" id="userphone" name="user-phonenum">
+        </div>
+        <div>
+        <label for="color">สีที่ชอบ</label>
+        <input type="color">
+        </div>
+        
+        <div>
+            <label for="numrange">ช่วงตัวเลข</label>
+            <input type="range" name="numrange" id="numberrange">
+        </div>
+
+        <div>
+            <label for="education">ระดับการศึกษา</label>
+        <select id="education" name="education">
+            <option value="primary">ประถม</option>
+            <option value="highschool">มัธยม</option>
+            <option value="bachelor">ปริญญาตรี</option>
+            <option value="master">ปริญญาโท</option>
+        </select>
+        </div>
+        <form action="/assignment_html2.html" method="post">
+            <span>เพศ</span>
+            <input type="radio" id="male" name="user-male">
+            <label for="male">เพศชาย</label>
+            <input type="radio" id="female" name="user-female">
+            <label for="female">เพศหญิง</label>
+            <input type="radio" id="lgbtq" name="user-lgbtq">
+            <label for="lgbtq">กำหนดเอง</label>
+        </form>
+            
+        <form action="/assignment_html2.html" method="post">
+            <span>สิ่งที่ชอบ</span>
+            <input type="checkbox" id="like1">
+            <label for="like1">เขียนเว็บ</label>
+            <input type="checkbox" id="like2">
+            <label for="like2">สร้างเกม</label>
+            <input type="checkbox" id="like3">
+            <label for="like3">ซ่อมคอม</label>
+            <input type="checkbox" id="like4">
+            <label for="like4">เล่นเกม</label>
+            <input type="checkbox" id="like5">
+            <label for="like5">อื่นๆ</label>
+        </form>
+
+        <div>
+        <label for="addfile">แนบไฟล์</label>
+            <input type="file">
+        </div>
+
+        <div>
+            <label for="website">เว็บไซด์</label>
+            <input type="text">
+        </div>
+    </div>
+</body>
+</html>
