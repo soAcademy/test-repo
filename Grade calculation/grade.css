@@ -1,0 +1,111 @@
+*{
+    margin: auto;
+    padding: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+.frame{
+    position: relative;
+    /*border: 1px solid red;*/
+    height: 500px;
+    width: 500px;
+    margin-top: 5rem;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhFRoUPaH4PtKrCHZ_1jJQQmnnKejpRBr7A&usqp=CAU");
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgb(1, 1, 1);
+
+    
+}
+/*Grade header*/
+.grade{
+    position: absolute;
+    z-index: 999;
+   
+    
+    padding-top: 1rem;
+    text-align: center;
+    margin-left: 21%;
+    margin-top: -1.5rem;
+    color: rgb(1, 94, 255);
+    background-image: linear-gradient(to top, #5a5c67, #5bc3f3, #ffffff);
+    
+    height: 50px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(1, 1, 1);
+}
+/*Text in grade header*/
+.frame h1{
+    background-image: linear-gradient(270deg, rgb(11, 11, 11), rgb(86, 86, 187));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 2px 1px rgba(46, 140, 241, 0.5);
+}
+.dew img{
+
+    margin-top: .5rem;
+    height: 30px;
+    border-radius: 50%;
+}
+.dew{
+   
+    margin-top: 1rem;
+    display: flex;
+    height: 50px;
+    width: 200px;
+    padding-top: 2.5rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
+
+#header{
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    justify-content: center;
+}
+form {
+    /*border: 1px solid red;*/
+    justify-content: center;
+    /*background-color: rgb(7, 7, 178);*/
+    width: 200px;
+    height: 50px;
+    padding-top: 0rem;
+    text-align: center;    
+}
+
+form input{
+    color: #ffffff;
+}
+form button{
+    color: #ffffff;
+}
+#output2{
+    font-size: larger;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+/*Click button*/
+#inputbutton{
+    border-color: #ffffff;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    margin-left: 43%;
+    width: 70px;
+    background-color: rgb(188, 229, 255);
+    margin-top: 1%;
+    box-shadow: 3px 3px 5px rgb(1, 1, 1);
+}
+/*input bar*/
+#score{
+    width: 120px;
+    color: #000000;
+    background-color: #c6eafa;
+    border-radius: 5px;
+}
